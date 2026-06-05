@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SJF Scheduling Simulator</title>
+    <link rel="stylesheet" href="style.css">
+       <script src="script.js"> </script>
+</head>
+<body>
+
+<div class="container">
+    <h1>SJF Scheduling Simulator</h1>
+
+    <div class="input-box">
+        <input type="text" id="pid" placeholder="Process ID">
+        <input type="number" id="arrival" placeholder="Arrival Time">
+        <input type="number" id="burst" placeholder="Burst Time">
+        <button onclick="addProcess()">Add Process</button>
+    </div>
+
+    <table id="processTable">
+        <thead>
+            <tr>
+                <th>Process</th>
+                <th>Arrival Time</th>
+                <th>Burst Time</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <button class="calculate-btn" onclick="calculateSJF()">
+        Calculate SJF
+    </button>
+
+    <div id="result"></div>
+</div>
+
+
+
+</body>
+</html>
